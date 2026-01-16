@@ -288,12 +288,12 @@ export default function ResearchPage() {
         )}
 
         {/* Other Publications - if available */}
-        {otherPublications.length > 0 && otherPublications[0].title !== "Digital Archiving and Diaspora Memory: Ethical Frameworks" && (
+        {otherPublications.length > 0 && (
           <section style={{ marginBottom: '4rem' }}>
-            <h2 style={{ marginBottom: '2rem' }}>Digital Scholarship & Essays</h2>
+            <h2 style={{ marginBottom: '2rem' }}>Digital Scholarship & Editorial Work</h2>
             <div style={{ display: 'grid', gap: '1.5rem' }}>
               {otherPublications.map((pub, idx) => (
-                <div
+                <motion.div
                   key={idx}
                   style={{
                     padding: '1.5rem',
@@ -301,15 +301,48 @@ export default function ResearchPage() {
                     border: '1px solid var(--color-border)',
                     borderRadius: '8px'
                   }}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6, delay: idx * 0.1 }}
                 >
+                  {pub.coverImage && (
+                    <div style={{ marginBottom: '1rem' }}>
+                      <img 
+                        src={pub.coverImage} 
+                        alt={`Cover of ${pub.title}`}
+                        style={{ 
+                          width: '150px', 
+                          height: 'auto',
+                          maxHeight: '200px',
+                          objectFit: 'contain',
+                          borderRadius: '4px',
+                          boxShadow: '0 2px 8px rgba(0,0,0,0.15)'
+                        }} 
+                      />
+                    </div>
+                  )}
                   <p style={{ marginBottom: '0.5rem' }}>
                     <strong>{pub.title}</strong>
+                    {'type' in pub && pub.type && (
+                      <span style={{ 
+                        marginLeft: '0.5rem',
+                        fontSize: '0.875rem',
+                        color: 'var(--color-accent)',
+                        fontWeight: 600
+                      }}>({pub.type})</span>
+                    )}
                   </p>
                   <p style={{ color: 'var(--color-text-light)', fontSize: '0.95rem', marginBottom: '0.5rem' }}>
-                    <em>{pub.venue}</em>, {pub.year}{pub.status && ` (${pub.status})`}
+                    <em>{pub.venue}</em>
+                    {'volume' in pub && pub.volume && `, Vol. ${pub.volume}`}
+                    {`, ${pub.year}`}
+                    {'status' in pub && pub.status && ` (${pub.status})`}
                   </p>
-                  <p style={{ fontSize: '0.9rem' }}>{pub.description}</p>
-                </div>
+                  {'description' in pub && pub.description && (
+                    <p style={{ fontSize: '0.9rem' }}>{pub.description}</p>
+                  )}
+                </motion.div>
               ))}
             </div>
           </section>
