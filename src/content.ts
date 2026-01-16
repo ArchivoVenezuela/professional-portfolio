@@ -407,7 +407,7 @@ export const books = [
     publisher: "Tamesis Books",
     year: 2018,
     description: "Examines Venezuelan narrative fiction during the Bolivarian Revolution (1999-2016), analyzing how novelists grappled with political transformation and social collapse.",
-    coverImage: "/images/books/narrativas-descalabro.jpg"
+    coverImage: "/images/books/Valladares_Narrativasdescalabro_cover.jpg"
   },
   {
     title: "El tránsito vacilante",
@@ -415,7 +415,7 @@ export const books = [
     publisher: "Rodopi",
     year: 2013,
     description: "Collection of critical essays examining contemporary Venezuelan cultural production across multiple genres and theoretical frameworks. Co-edited with Leonora Simonovis.",
-    coverImage: "/images/books/transito-vacilante.jpg"
+    coverImage: "/images/books/Valladares_Simonovis_Transitovacilante_cover.jpg"
   },
   {
     title: "Sexualidades disidentes en la narrativa cubana contemporánea",
@@ -423,7 +423,7 @@ export const books = [
     publisher: "Tamesis Books",
     year: 2012,
     description: "Study of dissident sexualities in contemporary Cuban literature, exploring intersections of sexuality, politics, and cultural resistance.",
-    coverImage: "/images/books/sexualidades-disidentes.png"
+    coverImage: "/images/books/Valladares_SexualidadesDisidentes_cover.png"
   }
 ];
 
@@ -607,7 +607,7 @@ export const otherPublications = [
     volume: "30",
     year: 2011,
     description: "Monographic issue on Afro-Hispanic subjectivities in contemporary literature and culture",
-    coverImage: "/images/books/afro-hispanic-subjectivities.png"
+    coverImage: "/images/books/Valladares_AfroHispanic_cover.png"
   },
   {
     title: "Digital Archiving and Diaspora Memory: Ethical Frameworks",
