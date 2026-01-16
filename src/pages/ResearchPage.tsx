@@ -236,8 +236,16 @@ export default function ResearchPage() {
                       fontStyle: 'italic',
                       marginBottom: '0.5rem'
                     }}>
-                      {pub.journal}{pub.volume && `, ${pub.volume}`}
-                      {pub.note && ` (${pub.note})`}
+                      {pub.journal && pub.journal !== 'TBD' ? (
+                        <>
+                          {pub.journal}{pub.volume && `, ${pub.volume}`}
+                          {pub.note && ` (${pub.note})`}
+                        </>
+                      ) : (
+                        <>
+                          {pub.note || pub.status || 'Publication details pending'}
+                        </>
+                      )}
                     </p>
                     <p style={{ fontSize: '0.9rem', color: 'var(--color-text-light)' }}>
                       {pub.year}
