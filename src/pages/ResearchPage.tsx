@@ -54,11 +54,10 @@ export default function ResearchPage() {
         >
           <h2>Digital Humanities Methodology</h2>
           <p style={{ fontSize: '1.05rem', lineHeight: '1.8', marginBottom: '1.5rem' }}>
-            As a scholar-practitioner, I integrate critical humanities frameworks with digital methods to enhance 
-            access, collaboration, and archival sustainability. My digital humanities methodology centers multilingual 
-            metadata modeling, bilingual data design, community co-curation, and ethical data infrastructure. I develop 
-            tools and platforms that enable humanities scholars and community archivists to document, preserve, and 
-            mobilize cultural memory across diasporic contexts.
+            I bring together critical humanities frameworks with digital methods to support access, collaboration, 
+            and archival sustainability. My work focuses on multilingual metadata modeling, bilingual data design, 
+            community co-curation, and ethical data infrastructure. I develop tools and platforms that help humanities 
+            scholars and community archivists document, preserve, and share cultural memory across diasporic contexts.
           </p>
 
           <div style={{ 
@@ -72,8 +71,8 @@ export default function ResearchPage() {
                 Multilingual Metadata Architecture
               </h4>
               <p style={{ fontSize: '0.95rem', lineHeight: '1.7' }}>
-                Designing bilingual metadata schemas that maintain semantic integrity across Spanish and English, 
-                enabling international discoverability while respecting linguistic and cultural specificity.
+                I design bilingual metadata schemas that maintain semantic integrity across Spanish and English, 
+                supporting international discoverability while respecting linguistic and cultural specificity.
               </p>
             </div>
             <div>
@@ -81,7 +80,7 @@ export default function ResearchPage() {
                 Community Co-Curation Models
               </h4>
               <p style={{ fontSize: '0.95rem', lineHeight: '1.7' }}>
-                Partnering with diaspora communities to co-design archival frameworks, ensuring that preservation 
+                I work with diaspora communities to co-design archival frameworks, ensuring that preservation 
                 practices honor community knowledge systems and cultural protocols.
               </p>
             </div>
@@ -90,7 +89,7 @@ export default function ResearchPage() {
                 Ethical AI Integration
               </h4>
               <p style={{ fontSize: '0.95rem', lineHeight: '1.7' }}>
-                Developing responsible frameworks for AI-assisted metadata translation and enrichment, with attention 
+                I explore frameworks for AI-assisted metadata translation and enrichment, with attention 
                 to cultural context, bias mitigation, and transparency in automated processes.
               </p>
             </div>

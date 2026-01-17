@@ -31,10 +31,11 @@ export default function TeachingPage() {
           <h2>Teaching Philosophy</h2>
           <p style={{ fontSize: '1.05rem', lineHeight: '1.8', marginBottom: '1.5rem' }}>
             My teaching philosophy emphasizes critical thinking, cultural awareness, and digital literacy. 
-            I integrate innovative pedagogical approaches including study abroad experiences, digital storytelling 
-            projects, AI literacy initiatives, and evidence-based online design. As a Quality Matters Certified 
-            Course Designer and Adult Learning Institute Fellow, I create inclusive, engaging learning environments 
-            that prepare students for diverse career pathways in academia, education, translation, and cultural institutions.
+            I draw on various pedagogical approaches including study abroad experiences, digital storytelling 
+            projects, AI literacy work, and evidence-based online design. As a Quality Matters Certified 
+            Course Designer and Adult Learning Institute Fellow, I work to create inclusive, engaging learning 
+            environments that support students pursuing diverse career paths in academia, education, translation, 
+            and cultural institutions.
           </p>
 
           <p style={{ fontSize: '1.05rem', lineHeight: '1.8', marginBottom: '1.5rem' }}>
@@ -157,7 +158,7 @@ export default function TeachingPage() {
 
         {/* Innovative Courses */}
         <section style={{ marginBottom: '4rem' }}>
-          <h2 style={{ marginBottom: '2rem' }}>Innovative Courses (2026-2027)</h2>
+          <h2 style={{ marginBottom: '2rem' }}>Upcoming Courses (2026-2027)</h2>
           <div style={{ display: 'grid', gap: '1.5rem' }}>
             {teachingHighlights.map((course, idx) => (
               <motion.div

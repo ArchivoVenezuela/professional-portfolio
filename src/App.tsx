@@ -7,6 +7,7 @@ import ResearchPage from './pages/ResearchPage';
 import TeachingPage from './pages/TeachingPage';
 import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
+import AdminPage from './pages/AdminPage';
 import './index.css';
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
             <Route path="/teaching" element={<TeachingPage />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/contact" element={<ContactPage />} />
+            <Route path="/admin" element={<AdminPage />} />
           </Routes>
         </main>
         <Footer />

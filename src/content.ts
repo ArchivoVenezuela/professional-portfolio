@@ -7,10 +7,9 @@
 
 export const siteConfig = {
   name: "Patricia Valladares-Ruiz",
-  title: "Scholar | Digital Strategist | Cultural Infrastructure Builder",
-  tagline: "Designing digital ecosystems that preserve diasporic memory and advance research equity",
+  title: "Academic Profile",
+  tagline: "",
   email: "pat.valladares@uc.edu",
-  phone: "(513) 432-6845",
   website: "patriciavalladares.com",
   cvUrl: "/cv/Patricia_Valladares_CV_2025.pdf",
   
@@ -25,9 +24,9 @@ export const siteConfig = {
 };
 
 export const heroContent = {
-  headline: "Scholar | Digital Strategist | Cultural Infrastructure Builder",
-  subheadline: "Designing digital ecosystems that preserve diasporic memory and advance research equity",
-  bio: "I am a transnational scholar and digital humanist whose work bridges Latin American and Caribbean studies with public humanities and digital systems design. As Founder of Archivo Venezuela and lead developer of multiple DH tools, I design infrastructure that preserves diasporic memory, expands research access, and builds capacity across academic, civic, and international communities.",
+  headline: "I work across migration, memory, and technology to support collaborative, justice-oriented scholarship.",
+  subheadline: "",
+  bio: "My research and practice center on Venezuelan diaspora cultural production, digital archiving, and the intersection of humanities and technology. Through Archivo Venezuela and the tools I develop, I work with communities, scholars, and institutions to document and preserve cultural memory in ways that honor linguistic diversity and community agency.",
   
   stats: [
     {
@@ -58,7 +57,7 @@ export const featuredProject = {
   title: "Archivo Venezuela",
   subtitle: "Documenting Displacement",
   description: "A bilingual digital archive preserving Venezuelan diasporic cultural production",
-  longDescription: "Since 2015, over 7 million Venezuelans have fled authoritarianism and economic collapse. Their stories, art, films, and literature risk being lost. Archivo Venezuela—a public digital humanities platform I designed and lead as a model of ethical, bilingual, and community-driven cultural preservation—captures and preserves this cultural memory through Omeka Classic, featuring bilingual metadata (Spanish/English) and curated digital exhibits.",
+  longDescription: "Since 2015, over 7 million Venezuelans have fled authoritarianism and economic collapse. Their stories, art, films, and literature risk being lost. Archivo Venezuela is a bilingual digital archive I developed to document this displacement. Built on Omeka Classic with Spanish/English metadata, it preserves cultural memory through community collaboration and serves researchers, educators, and diaspora communities worldwide.",
   impact: [
     "4 digital exhibits launched (2025)",
     "International guest curators from CUNY, Cornell",
@@ -73,31 +72,31 @@ export const featuredProject = {
 };
 
 export const currentInitiatives = {
-  headline: "Current Initiatives & Momentum",
+  headline: "Current Work",
   initiatives: [
     {
       title: "Graduate Certificate in Applied Digital Humanities",
       status: "Launching Fall 2026",
-      description: "Leading development of 14-credit interdisciplinary certificate program integrating digital methodologies with humanities research. Four core courses designed, university approval secured.",
-      impact: "First DH certificate at UC, positioning institution as regional DH hub"
+      description: "Developing a 14-credit interdisciplinary certificate program that integrates digital methodologies with humanities research. Four core courses designed, with university approval secured for Fall 2026 launch.",
+      impact: "First DH certificate program at UC"
     },
     {
       title: "International Digital Humanities Partnerships",
       status: "Building Networks",
-      description: "Establishing collaborations with CUNY, Cornell, and diaspora organizations for cross-institutional digital preservation projects and student exchange programs.",
-      impact: "Expanding Archivo Venezuela model to other displaced communities"
+      description: "Working with CUNY, Cornell, and diaspora organizations on cross-institutional digital preservation projects and student exchange programs.",
+      impact: "Extending archival methods developed through Archivo Venezuela to other contexts"
     },
     {
       title: "AI Ethics in Cultural Heritage Preservation",
       status: "Research in Progress",
-      description: "Developing ethical frameworks for AI integration in metadata creation, translation, and cultural heritage digitization. Piloting Gemini AI for bilingual archival workflows.",
-      impact: "Setting standards for responsible AI use in humanities research"
+      description: "Exploring ethical frameworks for AI integration in metadata creation, translation, and cultural heritage digitization. Currently piloting Gemini AI for bilingual archival workflows.",
+      impact: "Contributing to conversations about responsible AI use in humanities research"
     },
     {
       title: "Grant Development for Digital Infrastructure",
       status: "Active Proposals",
-      description: "Pursuing NEH, Mellon Foundation, and NSF funding for scalable digital preservation tools and transnational research networks.",
-      impact: "Sustainability and growth of public humanities infrastructure"
+      description: "Preparing grant proposals to NEH, Mellon Foundation, and NSF for digital preservation tools and transnational research networks.",
+      impact: "Working toward sustainable infrastructure for public humanities projects"
     }
   ]
 };
@@ -162,10 +161,10 @@ export const projects = [
     id: "arepa",
     title: "AREPA v3.0",
     category: "Python Application | Digital Preservation",
-    tagline: "Safeguarding Digital Heritage at Scale",
+    tagline: "Backup and Preservation for Digital Archives",
     summary: "A comprehensive backup utility that enables long-term data preservation, disaster recovery, and workflow documentation for digital archives built on Omeka.",
     problem: "Many digital humanities and public heritage projects lack robust backup strategies. Manual processes are time-consuming and often miss critical metadata and file dependencies.",
-    solution: "AREPA v3.0 ensures preservation integrity by automating the backup of Omeka sites, including metadata, media files, and CSV exports. With intelligent retry logic and preservation reports, it empowers teams to implement compliant, scalable archival strategies.",
+    solution: "AREPA v3.0 automates the backup of Omeka sites, including metadata, media files, and CSV exports. With retry logic and preservation reports, it helps teams implement backup strategies that support long-term archival needs.",
     tech: ["Python 3", "Tkinter", "JSON/CSV Export", "File Integrity Verification"],
     features: [
       "Complete backup of items, collections, metadata",
@@ -361,20 +360,20 @@ export const projects = [
 ];
 
 export const researchIntro = {
-  headline: "Scholarship at the Intersection of Culture, Crisis, and Digital Innovation",
-  description: "My research program addresses how communities respond to authoritarianism, displacement, and humanitarian crises through cultural production. I analyze how novels, films, theater, and visual art document and resist state violence, how diasporic networks reshape cultural memory, and how digital tools can preserve and democratize access to marginalized voices. This work combines traditional humanities scholarship with applied digital methodologies, positioning cultural studies as both interpretive practice and public intervention.",
-  approach: "I work across disciplinary boundaries—integrating literary analysis, film studies, archival theory, and computational methods—to build knowledge infrastructures that serve scholars, artists, and displaced communities. My scholarship is grounded in ethical engagement with vulnerable populations and commitment to multilingual, transnational research frameworks."
+  headline: "My research examines how communities respond to displacement and authoritarianism through cultural production.",
+  description: "I study how communities respond to authoritarianism, displacement, and humanitarian crises through cultural production. My work analyzes how novels, films, theater, and visual art document and resist state violence, how diasporic networks reshape cultural memory, and how digital tools can preserve and make accessible marginalized voices. This work brings together traditional humanities methods with digital approaches.",
+  approach: "I work across disciplinary boundaries—integrating literary analysis, film studies, archival theory, and computational methods—to build archives and tools that serve scholars, artists, and displaced communities. My scholarship is grounded in ethical engagement with vulnerable populations and a commitment to multilingual, transnational research."
 };
 
 export const researchVision = {
-  title: "Research Vision & Impact",
-  content: "As a scholar working at the intersection of diasporic studies and digital humanities, I explore how displaced communities use cultural production to assert identity, resist erasure, and preserve collective memory. My research foregrounds the Venezuelan diaspora—the largest refugee crisis in the Americas—within broader Latin American and Caribbean contexts, analyzing literature, film, theater, and digital archives as acts of survival and political engagement.",
-  leadershipImpact: "My research leadership spans archival preservation, software development for DH, and interdisciplinary mentoring. I lead projects that build digital capacity within diasporic communities, support emerging scholars, and produce tools used by researchers worldwide. I am particularly interested in building international digital networks that connect displaced cultural producers with public institutions, civic memory projects, and academic partners."
+  title: "Research Approach",
+  content: "Working at the intersection of diaspora studies and digital humanities, I explore how displaced communities use cultural production to assert identity, resist erasure, and preserve collective memory. My research focuses on the Venezuelan diaspora—the largest refugee crisis in the Americas—within broader Latin American and Caribbean contexts, analyzing literature, film, theater, and digital archives as acts of survival and political engagement.",
+  leadershipImpact: "My work includes archival preservation, software development for digital humanities, and interdisciplinary mentoring. I develop projects that build digital capacity within diasporic communities, support emerging scholars, and create tools used by researchers in various contexts. I'm interested in building international digital networks that connect displaced cultural producers with public institutions, memory projects, and academic partners."
 };
 
 export const projectsIntro = {
-  headline: "Digital Infrastructure for Cultural Memory and Research Equity",
-  description: "As a scholar-practitioner in digital humanities, I develop software tools and digital archives that address real methodological challenges in cultural heritage preservation, metadata standardization, and public scholarship. These projects demonstrate how technical innovation can advance humanistic inquiry while centering ethics, accessibility, and sustainability."
+  headline: "Digital Tools and Archives",
+  description: "I develop software tools and digital archives that address methodological challenges in cultural heritage preservation, metadata standardization, and public scholarship. These projects explore how technical approaches can support humanistic inquiry when they prioritize ethics, accessibility, and sustainability."
 };
 
 export const researchAreas = [
@@ -678,16 +677,16 @@ export const mentorshipStats = {
 };
 
 export const aboutContent = {
-  professionalIdentity: "I bring over two decades of international academic experience across Canada, Venezuela, and the United States. My work combines research excellence in Latin American and Caribbean studies with applied innovation in digital humanities, public infrastructure, and diasporic archiving. At the University of Cincinnati, I have led interdisciplinary graduate program development, editorial and research center leadership, and international digital collaborations. As a scholar with citizenship in Venezuela, Canada, and the United States, I bring transnational perspectives that inform both my research methodologies and my approach to building inclusive digital ecosystems.",
+  professionalIdentity: "I've spent over two decades working in academic settings across Canada, Venezuela, and the United States. My research focuses on Latin American and Caribbean cultural production, with particular attention to diaspora narratives and digital preservation. At the University of Cincinnati, I've contributed to graduate program development, editorial work, and digital collaborations. Having citizenship in Venezuela, Canada, and the United States shapes how I approach transnational research and the design of multilingual digital projects.",
   
   leadershipVision: {
-    title: "Vision for Leadership in Digital Humanities and Diaspora Studies",
-    statement: "As a scholar-practitioner, my vision is to build sustainable digital ecosystems that bridge academic research with the lived realities of displaced and transnational communities. Whether directing Archivo Venezuela or mentoring interdisciplinary student teams, I center ethics, accessibility, and cultural agency. I seek leadership roles where I can advance digital equity, transnational research networks, and curriculum innovation in the global humanities.",
+    title: "Approach to Digital Humanities and Diaspora Studies",
+    statement: "I work to build digital archives and tools that connect academic research with the experiences of displaced and transnational communities. In directing Archivo Venezuela and mentoring students, I prioritize ethical practice, equitable access, and community participation. I'm interested in leadership roles where I can contribute to digital preservation, transnational research networks, and curriculum development in the humanities.",
     principles: [
-      "Digital infrastructure as public scholarship: Tools and archives must serve academic researchers and community stakeholders equally",
-      "Ethical technology development: Metadata standards, AI integration, and preservation strategies must respect cultural contexts and linguistic diversity",
-      "Capacity building through mentorship: Training the next generation of digital humanists requires hands-on project experience and interdisciplinary collaboration",
-      "Transnational collaboration: Diaspora studies demands partnerships across borders, institutions, and sectors"
+      "Public scholarship: Digital tools and archives should serve researchers and communities with equal care",
+      "Ethical technology: Metadata standards, AI use, and preservation methods should respect cultural contexts and linguistic diversity",
+      "Mentorship: Teaching digital humanities works best through hands-on project experience and interdisciplinary collaboration",
+      "Transnational partnerships: Diaspora studies benefits from collaborations across borders, institutions, and sectors"
     ]
   },
   

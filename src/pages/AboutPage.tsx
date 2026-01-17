@@ -11,8 +11,9 @@ export default function AboutPage() {
           transition={{ duration: 0.6 }}
         >
           <h1 className="section-title">About</h1>
-          <p className="text-center" style={{ maxWidth: '800px', margin: '0 auto 4rem', fontSize: '1.25rem', fontFamily: 'var(--font-display)' }}>
-            Transnational Scholar | Digital Infrastructure Builder | Academic Leader
+          <p className="text-center" style={{ maxWidth: '800px', margin: '0 auto 4rem', fontSize: '1.125rem', lineHeight: '1.8' }}>
+            I bring experience across migration studies, digital humanities, and community-engaged scholarship, 
+            working to document and preserve cultural memory in ways that honor both scholarly rigor and community agency.
           </p>
         </motion.div>
 
@@ -287,17 +288,16 @@ export default function AboutPage() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          <h2 style={{ marginBottom: '1.5rem' }}>Why Venezuelan Diaspora Matters</h2>
+          <h2 style={{ marginBottom: '1.5rem' }}>On Documenting the Venezuelan Diaspora</h2>
           <p style={{ fontSize: '1.125rem', lineHeight: '1.8', marginBottom: '1.5rem' }}>
-            Since 2015, over 7 million Venezuelans have fled authoritarianism, violence, and economic collapse—representing 
-            the largest displacement in the Americas. This diaspora has produced novels, films, theater, music, and visual 
-            art that document trauma, resistance, and resilience. Without systematic preservation efforts, these voices 
-            risk being lost to history.
+            Since 2015, over 7 million Venezuelans have fled authoritarianism, violence, and economic collapse—the largest 
+            displacement in the Americas. This diaspora has produced novels, films, theater, music, and visual art that 
+            document trauma, resistance, and resilience. Without systematic preservation, these voices risk being lost.
           </p>
           <p style={{ fontSize: '1.125rem', lineHeight: '1.8' }}>
-            Archivo Venezuela emerged from my commitment to ensuring these stories are preserved, accessible, and studied. 
-            As someone with deep roots in Venezuela and lived experience of migration, I understand both the scholarly 
-            importance and human urgency of this work.
+            Archivo Venezuela came from my desire to preserve these stories in ways that make them accessible to both 
+            researchers and communities. As someone with roots in Venezuela and experience of migration, I recognize 
+            both the scholarly value and human importance of this work.
           </p>
         </motion.div>
 
@@ -308,9 +308,9 @@ export default function AboutPage() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          <span className="featured-badge">Seeking Leadership Opportunities</span>
           <div style={{ marginTop: '2rem' }}>
-            <ul className="content-list" style={{ fontSize: '1.125rem', lineHeight: '2' }}>
+            <h3 style={{ marginBottom: '1.5rem' }}>Areas of Interest for Leadership Roles</h3>
+            <ul className="content-list" style={{ fontSize: '1.05rem', lineHeight: '1.8' }}>
               {aboutContent.seeking.map(item => (
                 <li key={item}>{item}</li>
               ))}
@@ -322,14 +322,12 @@ export default function AboutPage() {
             paddingTop: '2rem', 
             borderTop: '1px solid var(--color-border)'
           }}>
-            <h3 style={{ marginBottom: '1.5rem' }}>Professional Approach</h3>
+            <h3 style={{ marginBottom: '1.5rem' }}>My Approach</h3>
             <p style={{ fontSize: '1.05rem', lineHeight: '1.8' }}>
-              I believe in <strong>accessible scholarship</strong> that serves both academic and public audiences, 
-              <strong> ethical digital humanities</strong> that centers equity and sustainability, 
-              <strong> multilingual research</strong> that respects linguistic diversity, 
-              <strong> mentorship</strong> that supports diverse career pathways, 
-              <strong> collaborative</strong> interdisciplinary projects, and 
-              <strong> innovation</strong> that solves real problems for researchers and communities.
+              I value accessible scholarship that serves academic and public audiences; ethical digital humanities 
+              that prioritize equity and sustainability; multilingual research that honors linguistic diversity; 
+              mentorship that supports varied career paths; collaborative interdisciplinary work; and tools that 
+              address real needs for researchers and communities.
             </p>
           </div>
         </motion.div>

@@ -24,9 +24,9 @@ export default function HomePage() {
                 maxWidth: '700px',
                 lineHeight: '1.8'
               }}>
-                I aim to lead transformative initiatives at the intersection of public humanities, digital infrastructure, 
-                and diasporic memory. My work supports institutions, communities, and scholars in building sustainable, 
-                ethical, and globally connected cultural futures.
+                I explore leadership roles where I can contribute to interdisciplinary collaboration and long-term cultural infrastructure. 
+                My work supports institutions, communities, and scholars in documenting displacement, preserving memory, 
+                and building digital archives that serve both research and community needs.
               </p>
             </motion.div>
             
@@ -94,7 +94,7 @@ export default function HomePage() {
             
             <div style={{ marginBottom: '2rem' }}>
               <h4 style={{ marginBottom: '1rem', color: 'var(--color-secondary)' }}>
-                Impact & Reach
+                Current Status
               </h4>
               <ul className="content-list">
                 {featuredProject.impact.map((item) => (
@@ -136,7 +136,7 @@ export default function HomePage() {
               <h2 style={{ margin: 0 }}>{currentInitiatives.headline}</h2>
             </div>
             <p style={{ maxWidth: '700px', margin: '0 auto', color: 'var(--color-text-light)', fontSize: '1.05rem' }}>
-              Active projects positioning for institutional leadership and international collaboration
+              Ongoing projects in curriculum development, international partnerships, and research infrastructure
             </p>
           </motion.div>
 
@@ -249,8 +249,8 @@ export default function HomePage() {
               margin: 0,
               color: 'var(--color-text)'
             }}>
-              <strong>Seeking partnerships and leadership opportunities</strong> to advance these initiatives 
-              at institutions committed to digital equity, transnational scholarship, and public humanities.
+              I'm interested in partnerships and collaborations that support digital preservation, multilingual scholarship, 
+              and community-centered archival work.
             </p>
           </motion.div>
         </div>

@@ -1,4 +1,4 @@
-import { Mail, Phone, Globe, ExternalLink } from 'lucide-react';
+import { Mail, Globe, ExternalLink } from 'lucide-react';
 import { siteConfig, navigation } from '../content';
 
 export default function Footer() {
@@ -38,12 +38,6 @@ export default function Footer() {
               <a href={`mailto:${siteConfig.email}`}>
                 <Mail size={16} style={{ display: 'inline', marginRight: '0.5rem' }} />
                 {siteConfig.email}
-              </a>
-            </li>
-            <li>
-              <a href={`tel:${siteConfig.phone.replace(/[^0-9]/g, '')}`}>
-                <Phone size={16} style={{ display: 'inline', marginRight: '0.5rem' }} />
-                {siteConfig.phone}
               </a>
             </li>
             <li>

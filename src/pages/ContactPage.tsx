@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Mail, Phone, MapPin, Globe, ExternalLink } from 'lucide-react';
+import { Mail, MapPin, Globe, ExternalLink } from 'lucide-react';
 import { siteConfig, aboutContent } from '../content';
 
 export default function ContactPage() {
@@ -12,9 +12,9 @@ export default function ContactPage() {
           transition={{ duration: 0.6 }}
         >
           <h1 className="section-title">Contact</h1>
-          <p className="text-center" style={{ maxWidth: '700px', margin: '0 auto 4rem', fontSize: '1.125rem' }}>
-            I welcome inquiries about research collaborations, digital humanities projects, 
-            speaking engagements, and employment opportunities.
+          <p className="text-center" style={{ maxWidth: '700px', margin: '0 auto 4rem', fontSize: '1.125rem', lineHeight: '1.8' }}>
+            I'm available to discuss research collaborations, digital humanities projects, 
+            speaking opportunities, and potential positions.
           </p>
         </motion.div>
 
@@ -42,25 +42,6 @@ export default function ContactPage() {
             </p>
           </motion.a>
 
-          <motion.a
-            href={`tel:${siteConfig.phone.replace(/[^0-9]/g, '')}`}
-            className="stat-card"
-            style={{ textDecoration: 'none', cursor: 'pointer' }}
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.1 }}
-            whileHover={{ scale: 1.02 }}
-          >
-            <Phone size={32} color="var(--color-accent)" style={{ marginBottom: '1rem' }} />
-            <h3 style={{ fontSize: '1.25rem', marginBottom: '0.5rem' }}>Phone</h3>
-            <p style={{ color: 'var(--color-secondary)' }}>
-              {siteConfig.phone}
-            </p>
-            <p style={{ fontSize: '0.85rem', color: 'var(--color-text-light)', marginTop: '0.5rem' }}>
-              Office hours: Mon & Wed, 2-4 PM EST
-            </p>
-          </motion.a>
 
           <motion.div
             className="stat-card"
@@ -153,8 +134,7 @@ export default function ContactPage() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          <span className="featured-badge">Currently Seeking</span>
-          <h2 style={{ marginTop: '1rem', marginBottom: '2rem' }}>Opportunities In</h2>
+          <h2 style={{ marginBottom: '2rem' }}>Areas of Interest</h2>
           <ul className="content-list" style={{ fontSize: '1.125rem' }}>
             {aboutContent.seeking.map(item => (
               <li key={item}>{item}</li>
@@ -190,7 +170,7 @@ export default function ContactPage() {
             paddingTop: '2rem', 
             borderTop: '1px solid var(--color-border)'
           }}>
-            <h4 style={{ marginBottom: '1rem' }}>Available For</h4>
+            <h4 style={{ marginBottom: '1rem' }}>I'm Available For</h4>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1rem' }}>
               <div>
                 <strong>Speaking & Workshops</strong>

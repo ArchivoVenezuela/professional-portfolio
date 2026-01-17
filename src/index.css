@@ -15,26 +15,41 @@
   --color-surface: #ffffff;         /* Pure white for cards */
   --color-border: #e5e5e5;          /* Light gray borders */
   
+  /* Enhanced color palette with variants */
+  --color-primary-light: rgba(26, 26, 46, 0.05);
+  --color-secondary-light: rgba(139, 69, 19, 0.08);
+  --color-accent-light: rgba(212, 175, 55, 0.12);
+  
   /* Typography - Distinctive serif + clean sans */
   --font-display: 'Cormorant Garamond', serif;  /* Elegant display font */
   --font-body: 'Work Sans', sans-serif;          /* Modern, readable sans */
   
-  /* Spacing scale */
+  /* Enhanced spacing scale */
   --space-xs: 0.5rem;
   --space-sm: 1rem;
   --space-md: 2rem;
   --space-lg: 4rem;
   --space-xl: 6rem;
+  --space-2xl: 8rem;
   
-  /* Shadows */
+  /* Shadows - enhanced with more options */
   --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
   --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.1);
   --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.12);
+  --shadow-xl: 0 20px 60px rgba(0, 0, 0, 0.15);
+  --shadow-colored: 0 8px 24px rgba(139, 69, 19, 0.15);
   
   /* Transitions */
   --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
   --transition-base: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   --transition-slow: 400ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+  /* Border radius */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-full: 9999px;
 }
 
 /* ============================================
@@ -62,7 +77,7 @@ body {
 }
 
 /* ============================================
-   TYPOGRAPHY
+   TYPOGRAPHY - ENHANCED
    ============================================ */
 
 h1, h2, h3, h4, h5, h6 {
@@ -82,10 +97,12 @@ h1 {
 h2 {
   font-size: clamp(2rem, 4vw, 3rem);
   font-weight: 600;
+  letter-spacing: -0.01em;
 }
 
 h3 {
   font-size: clamp(1.5rem, 3vw, 2rem);
+  letter-spacing: -0.005em;
 }
 
 h4 {
@@ -108,7 +125,7 @@ a:hover {
 }
 
 /* ============================================
-   LAYOUT COMPONENTS
+   LAYOUT COMPONENTS - ENHANCED
    ============================================ */
 
 .container {
@@ -138,12 +155,13 @@ a:hover {
   display: block;
   width: 80px;
   height: 3px;
-  background: var(--color-accent);
+  background: linear-gradient(90deg, var(--color-accent) 0%, var(--color-secondary) 100%);
   margin: var(--space-sm) auto 0;
+  border-radius: var(--radius-full);
 }
 
 /* ============================================
-   NAVIGATION
+   NAVIGATION - ENHANCED
    ============================================ */
 
 .nav {
@@ -151,13 +169,15 @@ a:hover {
   top: 0;
   background: rgba(250, 250, 248, 0.95);
   backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--color-border);
   z-index: 1000;
-  transition: box-shadow var(--transition-base);
+  transition: all var(--transition-base);
 }
 
 .nav.scrolled {
   box-shadow: var(--shadow-md);
+  background: rgba(250, 250, 248, 0.98);
 }
 
 .nav-container {
@@ -174,6 +194,11 @@ a:hover {
   font-size: 1.5rem;
   font-weight: 700;
   color: var(--color-primary);
+  transition: color var(--transition-fast);
+}
+
+.nav-logo:hover {
+  color: var(--color-secondary);
 }
 
 .nav-links {
@@ -200,6 +225,7 @@ a:hover {
   height: 2px;
   background: var(--color-accent);
   transition: width var(--transition-base);
+  border-radius: var(--radius-full);
 }
 
 .nav-link:hover {
@@ -218,6 +244,12 @@ a:hover {
   border: none;
   cursor: pointer;
   padding: 0.5rem;
+  color: var(--color-primary);
+  transition: color var(--transition-fast);
+}
+
+.nav-toggle:hover {
+  color: var(--color-secondary);
 }
 
 @media (max-width: 768px) {
@@ -248,7 +280,7 @@ a:hover {
 }
 
 /* ============================================
-   HERO SECTION
+   HERO SECTION - ENHANCED
    ============================================ */
 
 .hero {
@@ -270,6 +302,18 @@ a:hover {
   z-index: -1;
 }
 
+.hero::after {
+  content: '';
+  position: absolute;
+  bottom: -50px;
+  left: -50px;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(212, 175, 55, 0.08) 0%, transparent 70%);
+  border-radius: 50%;
+  z-index: -1;
+}
+
 .hero-content {
   animation: fadeInUp 0.8s ease-out;
 }
@@ -277,6 +321,10 @@ a:hover {
 .hero-title {
   margin-bottom: var(--space-sm);
   animation: fadeInUp 0.8s ease-out 0.2s backwards;
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .hero-subtitle {
@@ -298,7 +346,7 @@ a:hover {
 }
 
 /* ============================================
-   STATS CARDS
+   STATS CARDS - ENHANCED
    ============================================ */
 
 .stats-grid {
@@ -311,10 +359,24 @@ a:hover {
 .stat-card {
   background: var(--color-surface);
   padding: var(--space-md);
-  border-radius: 8px;
+  border-radius: var(--radius-lg);
   border: 1px solid var(--color-border);
   transition: all var(--transition-base);
   animation: fadeInUp 0.6s ease-out backwards;
+  position: relative;
+  overflow: hidden;
+}
+
+.stat-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(180deg, var(--color-accent) 0%, var(--color-secondary) 100%);
+  transform: scaleY(0);
+  transition: transform var(--transition-base);
 }
 
 .stat-card:nth-child(1) { animation-delay: 0.5s; }
@@ -323,15 +385,22 @@ a:hover {
 
 .stat-card:hover {
   transform: translateY(-4px);
-  box-shadow: var(--shadow-md);
+  box-shadow: var(--shadow-colored);
   border-color: var(--color-accent);
+}
+
+.stat-card:hover::before {
+  transform: scaleY(1);
 }
 
 .stat-number {
   font-family: var(--font-display);
   font-size: 3rem;
   font-weight: 700;
-  color: var(--color-secondary);
+  background: linear-gradient(135deg, var(--color-secondary) 0%, var(--color-accent) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   line-height: 1;
   margin-bottom: var(--space-xs);
 }
@@ -350,7 +419,7 @@ a:hover {
 }
 
 /* ============================================
-   BUTTONS
+   BUTTONS - ENHANCED
    ============================================ */
 
 .button-group {
@@ -368,21 +437,42 @@ a:hover {
   font-family: var(--font-body);
   font-weight: 500;
   font-size: 1rem;
-  border-radius: 4px;
+  border-radius: var(--radius-md);
   border: 2px solid transparent;
   cursor: pointer;
   transition: all var(--transition-base);
   text-decoration: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.button::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  transform: translate(-50%, -50%);
+  transition: width 0.6s, height 0.6s;
+}
+
+.button:hover::before {
+  width: 300px;
+  height: 300px;
 }
 
 .button-primary {
-  background: var(--color-secondary);
+  background: linear-gradient(135deg, var(--color-secondary) 0%, #a0522d 100%);
   color: white;
   border-color: var(--color-secondary);
+  box-shadow: 0 4px 12px rgba(139, 69, 19, 0.2);
 }
 
 .button-primary:hover {
-  background: var(--color-primary);
+  background: linear-gradient(135deg, var(--color-primary) 0%, #2d2d4e 100%);
   border-color: var(--color-primary);
   transform: translateY(-2px);
   box-shadow: var(--shadow-md);
@@ -398,10 +488,11 @@ a:hover {
   background: var(--color-secondary);
   color: white;
   transform: translateY(-2px);
+  box-shadow: var(--shadow-colored);
 }
 
 /* ============================================
-   PROJECT CARDS
+   PROJECT CARDS - ENHANCED
    ============================================ */
 
 .projects-grid {
@@ -414,17 +505,34 @@ a:hover {
 .project-card {
   background: var(--color-surface);
   border: 1px solid var(--color-border);
-  border-radius: 8px;
+  border-radius: var(--radius-lg);
   overflow: hidden;
   transition: all var(--transition-base);
   display: flex;
   flex-direction: column;
+  position: relative;
+}
+
+.project-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--color-accent) 0%, var(--color-secondary) 100%);
+  transform: scaleX(0);
+  transition: transform var(--transition-base);
 }
 
 .project-card:hover {
   transform: translateY(-8px);
-  box-shadow: var(--shadow-lg);
+  box-shadow: var(--shadow-xl);
   border-color: var(--color-accent);
+}
+
+.project-card:hover::before {
+  transform: scaleX(1);
 }
 
 .project-card.featured {
@@ -471,11 +579,18 @@ a:hover {
 .tech-tag {
   display: inline-block;
   padding: 0.25rem 0.75rem;
-  background: rgba(139, 69, 19, 0.08);
+  background: var(--color-secondary-light);
   color: var(--color-secondary);
-  border-radius: 4px;
+  border-radius: var(--radius-sm);
   font-size: 0.85rem;
   font-weight: 500;
+  transition: all var(--transition-fast);
+}
+
+.tech-tag:hover {
+  background: var(--color-secondary);
+  color: white;
+  transform: translateY(-2px);
 }
 
 .project-footer {
@@ -486,33 +601,48 @@ a:hover {
 }
 
 /* ============================================
-   FEATURED CONTENT
+   FEATURED CONTENT - ENHANCED
    ============================================ */
 
 .featured-section {
-  background: var(--color-surface);
+  background: linear-gradient(135deg, var(--color-surface) 0%, rgba(250, 250, 248, 0.5) 100%);
   border: 2px solid var(--color-accent);
-  border-radius: 12px;
+  border-radius: var(--radius-xl);
   padding: var(--space-lg);
   margin: var(--space-lg) 0;
-  box-shadow: var(--shadow-md);
+  box-shadow: var(--shadow-lg);
+  position: relative;
+  overflow: hidden;
+}
+
+.featured-section::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, var(--color-accent-light) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
 }
 
 .featured-badge {
   display: inline-block;
-  background: var(--color-accent);
+  background: linear-gradient(135deg, var(--color-accent) 0%, #f4c430 100%);
   color: var(--color-primary);
   padding: 0.375rem 1rem;
-  border-radius: 20px;
+  border-radius: var(--radius-full);
   font-size: 0.875rem;
   font-weight: 600;
   margin-bottom: var(--space-md);
   text-transform: uppercase;
   letter-spacing: 0.05em;
+  box-shadow: 0 2px 8px rgba(212, 175, 55, 0.3);
 }
 
 /* ============================================
-   LISTS & CONTENT
+   LISTS & CONTENT - ENHANCED
    ============================================ */
 
 .content-list {
@@ -524,6 +654,11 @@ a:hover {
   padding-left: 1.5rem;
   position: relative;
   margin-bottom: var(--space-sm);
+  transition: transform var(--transition-fast);
+}
+
+.content-list li:hover {
+  transform: translateX(4px);
 }
 
 .content-list li::before {
@@ -532,10 +667,15 @@ a:hover {
   left: 0;
   color: var(--color-accent);
   font-weight: bold;
+  transition: transform var(--transition-fast);
+}
+
+.content-list li:hover::before {
+  transform: translateX(4px);
 }
 
 /* ============================================
-   ANIMATIONS
+   ANIMATIONS - ENHANCED
    ============================================ */
 
 @keyframes fadeInUp {
@@ -558,19 +698,52 @@ a:hover {
   }
 }
 
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 .fade-in {
   animation: fadeIn 0.6s ease-out;
 }
 
 /* ============================================
-   FOOTER
+   FOOTER - ENHANCED
    ============================================ */
 
 .footer {
-  background: var(--color-primary);
+  background: linear-gradient(135deg, var(--color-primary) 0%, #0f0f1f 100%);
   color: rgba(255, 255, 255, 0.8);
   padding: var(--space-lg) 0 var(--space-md);
   margin-top: var(--space-xl);
+  position: relative;
+}
+
+.footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent 0%, var(--color-accent) 50%, transparent 100%);
 }
 
 .footer-content {
@@ -598,11 +771,13 @@ a:hover {
 
 .footer-links a {
   color: rgba(255, 255, 255, 0.7);
-  transition: color var(--transition-fast);
+  transition: all var(--transition-fast);
+  display: inline-block;
 }
 
 .footer-links a:hover {
   color: var(--color-accent);
+  transform: translateX(4px);
 }
 
 .footer-bottom {
@@ -643,6 +818,11 @@ a:hover {
   .button {
     justify-content: center;
   }
+  
+  .hero-title {
+    -webkit-text-fill-color: var(--color-primary);
+    background: none;
+  }
 }
 
 /* ============================================
@@ -667,4 +847,48 @@ a:hover {
 
 .mt-lg {
   margin-top: var(--space-lg);
+}
+
+/* ============================================
+   ADDITIONAL ENHANCEMENTS
+   ============================================ */
+
+/* Smooth scroll behavior */
+html {
+  scroll-padding-top: 80px;
+}
+
+/* Selection colors */
+::selection {
+  background: var(--color-accent-light);
+  color: var(--color-primary);
+}
+
+::-moz-selection {
+  background: var(--color-accent-light);
+  color: var(--color-primary);
+}
+
+/* Focus styles for accessibility */
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+  border-radius: var(--radius-sm);
+}
+
+/* Image enhancements */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--radius-md);
+}
+
+/* Card hover effect enhancements */
+.card-hover {
+  transition: all var(--transition-base);
+}
+
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
 }
